@@ -5,5 +5,12 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+    font-family: 'Roboto Mono', monospace;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }

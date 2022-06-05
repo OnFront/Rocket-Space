@@ -12,15 +12,17 @@
     }
 }
 
-@mixin font-size($fs, $fe) {
-    font-size: calc(
-        #{$fs} * 1px + (#{$fe} - #{$fs}) * ((100vw - 375px) / (1440 - 375))
-    );
+@mixin fontSize($size) {
+    $root: 16;
+  
+    font-size: calc($size/$root) + rem;
 }
+
+
 @mixin ie-only {
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       @content;
     }
-  }
+}
 
   

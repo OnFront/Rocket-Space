@@ -1,0 +1,15 @@
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    
+    &__item {
+        width: 100%;
+        justify-content: center;
+        padding: 1.6rem;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgba(31, 31, 31, 0.822);
+        margin-bottom: 24px;
+    }
+}
