@@ -1,0 +1,26 @@
+
+
+
+@mixin mq($vp) {
+    @media all and (min-width: map-get($breakpoints, $vp)) {
+        @content;
+    }
+}
+@mixin mq-max($vp) {
+    @media all and (max-width: map-get($breakpoints, $vp)) {
+        @content;
+    }
+}
+
+@mixin font-size($fs, $fe) {
+    font-size: calc(
+        #{$fs} * 1px + (#{$fe} - #{$fs}) * ((100vw - 375px) / (1440 - 375))
+    );
+}
+@mixin ie-only {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      @content;
+    }
+  }
+
+  
